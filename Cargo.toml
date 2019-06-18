@@ -1,0 +1,13 @@
+[package]
+name = "async-proxy"
+version = "0.1.0"
+authors = ["Lucio Franco <luciofranco14@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+tokio = { git = "https://github.com/tokio-rs/tokio", branch = "std-future" }
+tokio-tcp = { git = "https://github.com/tokio-rs/tokio", branch = "std-future", features = ["incoming"] }
+tokio-io = { git = "https://github.com/tokio-rs/tokio", branch = "std-future" }
+tokio-sync = { git = "https://github.com/tokio-rs/tokio",  branch = "std-future" }
+futures-preview = "0.3.0-alpha.16"
+bytes = "0.4"
